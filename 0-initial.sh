@@ -10,6 +10,6 @@ service ssh start
 
 ssh-keygen -t rsa -q -f "/home/simoc/.ssh/id_rsa" -N ""
 
-./ssh-copy.expect
+cp /home/simoc/.ssh/id_rsa /home/simoc/.ssh/authorized_keys
 
 
