@@ -1,7 +1,6 @@
 #!/usr/bin/expect
 
-spaw ssh-copy-id simoc@127.0.0.1  -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
-
+spawn ssh-copy-id -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null simoc@127.0.0.1
 
 set prompt ":|#|\\\$"
 interact -o -nobuffer -re $prompt return
